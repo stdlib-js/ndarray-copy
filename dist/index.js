@@ -1,0 +1,5 @@
+"use strict";var y=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var v=y(function(O,p){
+var m=require('@stdlib/assert-is-ndarray-like/dist'),g=require('@stdlib/assert-is-plain-object/dist'),f=require('@stdlib/ndarray-base-assert-is-mostly-safe-data-type-cast/dist'),i=require('@stdlib/assert-has-own-property/dist'),u=require('@stdlib/ndarray-dtype/dist'),l=require('@stdlib/ndarray-shape/dist'),d=require('@stdlib/ndarray-order/dist'),q=require('@stdlib/ndarray-empty/dist'),c=require('@stdlib/ndarray-base-assign/dist'),o=require('@stdlib/error-tools-fmtprodmsg/dist');function b(r){var e,t,n,a,s;if(!m(r))throw new TypeError(o('2Xz5t',r));if(t={},arguments.length>1){if(e=arguments[1],!g(e))throw new TypeError(o('2Xz2V',e));if(a=u(r),i(e,"dtype")){if(!f(a,e.dtype))throw new TypeError(o('2XzJd',String(a),String(e.dtype)));t.dtype=e.dtype}else t.dtype=a;i(e,"order")?t.order=e.order:t.order=d(r),i(e,"mode")&&(t.mode=e.mode),i(e,"submode")&&(t.submode=e.submode)}else t.dtype=u(r),t.order=d(r);return n=l(r),s=q(n,t),c([r,s]),s}p.exports=b
+});var h=v();module.exports=h;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
